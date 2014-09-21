@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+
+h2
+{
+	height:100px;
+}
+
+#auto,#next
+{	text-align: center;
+  font-size:2rem;  
+	font-weight: bold;
+ font-family: Ubuntu, sans-serif;
+	color: #000;
+	}
+	

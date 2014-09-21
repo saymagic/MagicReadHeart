@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="一个魔术网页">
+    <meta name="author" content="saymagic">
+    <meta name="keywords" content="魔术,网页">
+
+    <link href="css/modern.css" rel="stylesheet">
+    <link href="css/modern-responsive.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <link href="css/magic.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css">	
+    <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+
+</head>
+<body class="metrouicss" onload="prettyPrint()" style="">
+
+
+<div class="page secondary" style=''>
+
+	<div class="page-header">
+		<div class="page-header-content">
+			<h1></h1>
+		</div>
+	</div>
+	
+	 <div class="page-region">
+            <div class="page-region-content">
+                <ul class="listview">   
+                    <li class= 'step1 animated' style='width:400px; display:none;border:none'>
+                      <div class="card dame hearts">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    					<div class="card two spades">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    			        <div class="card eight diamonds">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    					<div class="card seven diamonds">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+                    </li>
+                    <li class= 'step2' style='width:400px;display:none'>
+                      <div class="card five clubs animated" id="step2_1">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    					<div class="card king spades animated"id="step2_2">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    			        <div class="card ten spades animated" id="step2_3">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    					<div class="card ace hearts animated" id="step2_4">
+        				<div class="small-suit" id = "step2_4_1"></div>
+        				<div class="suit"></div>
+    					</div>
+                    </li>
+                    <li class= 'step3 animated' style='width:400px;display:none'>
+                      <div class="card jack hearts">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    					<div class="card three diamonds">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    			        <div class="card ten clubs">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+    					<div class="card six clubs">
+        				<div class="small-suit"></div>
+        				<div class="suit"></div>
+    					</div>
+                    </li>
+                </ul>
+            </div>
+             	<div class="charms   animated" style="width:400px ; padding-top:200px;padding-left:30px;padding-right:30px">
+             		<div class="message bg-color-white" style="margin-buttom:200px;height:300px;padding-top:100px">
+             			<h2>
+							A simple <big>Magic</big>,let us <span style="color:red" id="start">start</span>!
+             			</h2><br>
+
+             			
+             		</div>
+             	</div>
+ 			</div>
+</div>
+<script >
+$(document).ready(function(){
+
+	var interval;
+	$('.charms').show().addClass('fadeInRightBig').delay(1200).queue(function(next){
+				$(this).removeClass('fadeInRightBig');
+				next();
+				$(this).addClass('wobble');
+	});
+	$("#start").click(function(){
+		//$("#buttom_button").fadeIn(3000);
+		auto();
+		interval = setInterval(auto,8500);
+		poker_dadein();
+	});
+	function animate()
+	{
+		$("#step2_1").addClass('fadeOutDown').delay(1200).queue(function(next){
+			next();
+		});
+		$("#step2_2").addClass('fadeOutUp').delay(1200).queue(function(next){
+			next();
+		});
+		//a();
+		var t1=setTimeout(a,1500)
+		
+	}
+	function a()
+	{
+		$('.step1').addClass('rotateOutUpRight').delay(200).queue(function(next){
+			next();
+			});
+		
+		var t2=setTimeout(b,1800)
+	}
+	function b()
+	{
+		
+		$('.step3').addClass('hinge').delay(2200).queue(function(next){
+			next();
+			});
+		var t3=setTimeout(c,2000)
+	}
+	function c()
+	{
+		$("#step2_3").addClass('flipOutY').delay(2200).queue(function(next){
+			next();
+		});
+		var t4 = setTimeout(d,1000);
+	}
+	function d()
+	{
+		$("h2").html("THE ACE OF HEART");
+		var t5 = setTimeout(e,1000);
+	}
+	function e()
+	{
+		$("h2").fadeOut(3000);
+		var t6 = setTimeout(f,1200);
+	}
+	function f()
+	{
+		$("#step2_4").removeClass('ace');
+		$("div").remove('.small-suit');
+		$("#step2_4").css("border","none");
+		var t7 = setTimeout(g,3000);
+	}
+	function g()
+	{
+		$("h2").fadeIn();
+		
+		$("h2").html("<a href=index.html><h2>Try again</h2></a><a target='_blank' href='http://v.youku.com/v_show/id_XMTI5NjQ0ODg0.html'><h2>来源博客</h2></a><a target='_blank' href='https://github.com/saymagic/magic_readheart'><h2>源码分享</h2></a><br/>");
+	}
+	function poker_dadein()
+	{
+		var speed = new Array();
+		speed[0] = 1000;
+		speed[1] = 2000;
+		speed[2] = 3000;
+		var step = $("li");
+		step.each(function(index){
+				$(this).fadeIn(speed[index]);
+		});
+	}
+	//step1[1].fadeIn(1000);
+	//step1[1].fadeIn(2000);
+	//step1[1].fadeIn(3000);
+	
+	var messages = new Array();
+	messages[0] = "这里有12张牌，首先，请您在心中任意记住其中的一张牌.";
+	messages[1] = "接着，请移动到<big>最近</big >的<big class='red'>红色</big>的牌.";
+	messages[2] = "然后，请向左或者向右移到<big>最近</big>的<big>黑色</big>的牌.";
+	messages[3] = "Next，请您向上或者向下移动到<big>最近</big>的<big class='red'>红色</big>的牌.";
+	messages[4] = "做的很好，接下来请注意！！";
+	messages[5] = "请沿着<big>斜线</big>移动到<big>最近</big>的<big>黑色</big>的牌";
+	messages[6] = "最后";
+	messages[7] = "向左或者向右移动到最近的<big class='red'>红色</big>的牌";
+	messages[8] = "现在，我不可能知道你现在的牌在什么位置";
+	messages[9] = "JUST NOW～";
+	messages[10] = "I will reading your mind!";
+	messages[11] = "<----- WATCH!";
+	var num = 0;
+	//$(".charms").click(function(){
+		//$('.step3').addClass('hinge').delay(200).queue(function(next){
+			//next();
+		//});
+	//});
+	//$("#next").click(function(){
+		//alert();
+
+	//});
+	function auto()
+	{
+		$("h2").html(messages[num]);
+		num++;
+		if(num == 12)
+		{
+			num = 0;
+			var t = setTimeout(animate,1000);
+			clearInterval(interval);
+		}
+		else if(num == 9)
+		{
+			clearInterval(interval);
+			interval = setInterval(auto,3000);
+		}
+	}
+	//alert(messages[1]);
+});
+
+</script>
+</body>
+</head>
+</html>

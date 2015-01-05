@@ -9,4 +9,4 @@
 最后说一下这个魔术吧，其实只要你照做就一定会是这个结果，为什么呢？我想你尝试两变就应该知道了，最后的效果我把它定格成一颗心，那你就可以发挥自己的想象力来做一些其它的事情了····
 
 
-原文链接:[http://caoyanming.com/2014/09/21/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%AD%94%E6%9C%AF%E5%BA%94%E7%94%A8.html](http://caoyanming.com/2014/09/21/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%AD%94%E6%9C%AF%E5%BA%94%E7%94%A8.html)
+原文链接:[http://blog.saymagic.me/2014/09/21/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%AD%94%E6%9C%AF%E5%BA%94%E7%94%A8.html](http://blog.saymagic.me/2014/09/21/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%AD%94%E6%9C%AF%E5%BA%94%E7%94%A8.html)
